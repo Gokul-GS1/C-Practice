@@ -1,0 +1,53 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void add(int a,int b){
+    printf("the addition of two no is %d",a+b);
+}
+void sub(int a,int b){
+     printf("the subrction of two nos is %d",a-b);
+}
+void div(int a,int b){
+       printf("the divsion of two nos is %d",a/b);
+}
+void mul(int a,int b){
+       printf("the multiplication of two nos is %d",a*b);
+}
+
+void calculator(){
+    int a,b,c;
+    printf("'enter any two no");
+    scanf("%d%d",&a,&b);
+    printf("the two are a=%d and b=%d",a,b);
+    printf("\nenter your choice\n1.Add\n2.Sub\n3.Mul\n4.div\n");
+    scanf("%d",&c);
+    printf("Your choice is %d\n",c);
+    if(c==1){
+        add(a,b);
+    }
+    else if(c==2){
+       sub(a,b);
+    }
+    else if(c==3){ 
+       mul(a,b);
+    }
+    else if(c==4){
+       div(a,b);
+    }
+    else{
+        printf("Enter the correct value");
+    }
+}
+
+void ScientificCalc(){
+    add(4,5);
+}
+
+int main() {
+    calculator();
+    ScientificCalc();
+    add(4,2);
+    sub(3,4)
+    printf("\nProgram completed");
+    return 0;
+}
