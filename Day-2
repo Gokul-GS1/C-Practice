@@ -1,0 +1,29 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+int main() {
+    int count,counter=0,temp=0;
+    char username [20];
+    printf("enter your username\n");
+    scanf("%s", username);
+     
+    
+     
+     for(int i=0;i<=count;i++){
+         for(int j=count;j>=0;j--){
+             if(count-j-1==i){
+                 if(username[i]==username[j]){
+                     ++counter;
+                 }
+             }
+         }
+     }
+     
+     if(counter==count)
+        printf("Palindrome");
+    else
+        printf("Not Palindrome");
+        
+     
+    return 0;
+}
